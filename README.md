@@ -94,13 +94,13 @@ sudo mkdir -p /tools/Xilinx
 sudo chown $USER:$USER /tools/Xilinx
 ```
 
-![Step 9 - Set /tools/Xilinx path](instalador_paso_09.png)
+![0(9)](0(9).png)
 
-![Step 10 - Installation in progress](instalador_paso_10.png)
+![0(10)](0(10).png)
 
-![Step 11 - Completion](instalador_paso_11.png)
+![0(11)](0(11).png)
 
-![Step 12 - Final confirmation](instalador_paso_12.png)
+![0(12)](0(12).png)
 
 ---
 
