@@ -2,7 +2,7 @@
 --  Project      : FPGA Digital Design
 --  File         : test1.vhd
 --  Author       : Luis David Barahona Valdivieso
---  Organization : UTEC L4201
+--  Organization : UTEC L414 (Lab de Sistemas Embebidos)
 --  Date         : 2026-03-12
 --  Version      : 1.0
 --
