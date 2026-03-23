@@ -122,7 +122,8 @@ source ~/.bashrc
 > source ~/.bashrc
 > ```
 
-![Environment variables configured](variables_entorno.png)
+
+![0(13)](0(13).png)
 
 #### Test Vivado
 
@@ -130,7 +131,7 @@ source ~/.bashrc
 vivado
 ```
 
-![Vivado launching from terminal](vivado_terminal.png)
+![0(14)](0(14).png)
 
 #### For Vitis (optional)
 
