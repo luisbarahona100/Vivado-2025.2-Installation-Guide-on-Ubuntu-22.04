@@ -259,15 +259,14 @@ sudo ./installLibs.sh
 
 Connect the board via USB and verify that Vivado recognizes it in the Hardware Manager.
 
-![Basys 3 detected in Hardware Manager](basys3_detectar.png)
+![0(19)](0(19).png)
 
 #### Load Bitstream
 
 Open the Hardware Manager, connect to the target, and program the device with the bitstream.
 
-![Load bitstream - step 1](basys3_bitstream_01.png)
+![0(20)](0(20).png)
 
-![Load bitstream - step 2](basys3_bitstream_02.png)
 
 ---
 
