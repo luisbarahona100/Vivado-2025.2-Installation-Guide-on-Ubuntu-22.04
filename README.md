@@ -272,23 +272,10 @@ Open the Hardware Manager, connect to the target, and program the device with th
 
 ### 3.2 Tests with PYNQ Z1
 
-> 📷 *(Section pending completion — add your PYNQ Z1 evidence images here)*
+> 📷 *(Section pending completion )*
 
 ---
 
-## 4. Annexes
-
-### PC1
-
-![Annex PC1 - general view](anexo_pc1_01.png)
-
-![Annex PC1 - detail](anexo_pc1_02.png)
-
-### PC2
-
-> 📷 *(Add the corresponding images for PC2 here)*
-
----
 
 ## 5. Detected Errors
 
@@ -296,7 +283,7 @@ Open the Hardware Manager, connect to the target, and program the device with th
 
 An error was detected on this PC related to the alternative installation path.
 
-![Error on PC L414-011](error_pc_L414_011.png)
+![0(21)](0(21).png)
 
 ---
 
