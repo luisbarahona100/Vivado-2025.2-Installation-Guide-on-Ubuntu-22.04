@@ -63,11 +63,11 @@ Download the installer from the official AMD/Xilinx website:
 
 🔗 [https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2025-2.html](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2025-2.html)
 
-![Download evidence - main page](evidencia_descarga_01.png)
+![img0.png](img0.png)
 
-![Download evidence - version selection](evidencia_descarga_02.png)
+![img1.png](img1.png)
 
-![Download evidence - file confirmation](evidencia_descarga_03.png)
+![img2.png](img2.png)
 
 ---
 
