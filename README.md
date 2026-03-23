@@ -77,21 +77,15 @@ Navigate to the directory where you downloaded the installer and run it. Follow 
 
 ![0(3)](0(3).png)
 
-![Step 1 - Run the installer](instalador_paso_01.png)
+![0(4)](0(4).png)
 
-![Step 2 - Welcome screen](instalador_paso_02.png)
+![0(5)](0(5).png)
 
-![Step 3 - Accept license](instalador_paso_03.png)
+![0(6)](0(6).png)
 
-![Step 4 - Product selection](instalador_paso_04.png)
+![0(7)](0(7).png)
 
-![Step 5 - Component selection](instalador_paso_05.png)
-
-![Step 6 - Additional options](instalador_paso_06.png)
-
-![Step 7 - Installation summary](instalador_paso_07.png)
-
-![Step 8 - Installation progress](instalador_paso_08.png)
+![0(8)](0(8).png)
 
 **Create the installation directory and assign permissions** before specifying the target path in the installer:
 
