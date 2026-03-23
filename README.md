@@ -75,6 +75,8 @@ Download the installer from the official AMD/Xilinx website:
 
 Navigate to the directory where you downloaded the installer and run it. Follow the steps in the graphical wizard:
 
+![0(3)](0(3).png)
+
 ![Step 1 - Run the installer](instalador_paso_01.png)
 
 ![Step 2 - Welcome screen](instalador_paso_02.png)
