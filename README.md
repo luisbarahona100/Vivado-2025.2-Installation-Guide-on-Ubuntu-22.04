@@ -198,7 +198,7 @@ update-desktop-database ~/.local/share/applications
 
 Press the **Super/Windows** key, search for **Vivado**, and click to open it.
 
-![Vivado shortcut in the application menu](acceso_directo_vivado.png)
+![0(15)](0(15).png)
 
 #### Desktop shortcut for Vitis (optional)
 
