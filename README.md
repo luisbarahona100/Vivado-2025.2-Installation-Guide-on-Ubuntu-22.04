@@ -236,7 +236,7 @@ cd /tools/Xilinx/2025.2/Vivado/data/xicom/cable_drivers/lin64/install_script/ins
 sudo ./install_drivers
 ```
 
-![JTAG drivers installation](jtag_drivers.png)
+![0(16)](0(16).png)
 
 #### Install additional libraries
 
@@ -245,9 +245,9 @@ cd /tools/Xilinx/2025.2/Vitis/scripts
 sudo ./installLibs.sh
 ```
 
-![Additional libraries installation - step 1](libs_adicionales_01.png)
+![0(17)](0(17).png)
 
-![Additional libraries installation - step 2](libs_adicionales_02.png)
+![0(18)](0(18).png)
 
 ---
 
