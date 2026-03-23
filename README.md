@@ -1,52 +1,52 @@
-# 🛠️ Guía de Instalación de Vivado 2025.2 en Ubuntu 22.04
+# 🛠️ Vivado 2025.2 Installation Guide on Ubuntu 22.04
 
-> ⚠️ **Nota:** Se optó por instalar la versión **2025.2** debido a que las PCs del laboratorio utilizan **Ubuntu 22.04.5**. La versión 2024.2 no era compatible con dicha versión de Ubuntu.
-
----
-
-## 👥 Autores
-
-| Rol | Nombre | Carrera |
-|-----|--------|---------|
-| 📘 Autor | Luis David Barahona Valdivieso | Ingeniería Electrónica |
-| 🤖 Asistente de IA | Claude (Sonnet 4.6) — Anthropic | Modelo de lenguaje grande (LLM) |
+> ⚠️ **Note:** Version **2025.2** was chosen because the lab PCs run **Ubuntu 22.04.5**. Version 2024.2 was not compatible with this Ubuntu release.
 
 ---
 
-## 📋 Tabla de Contenidos
+## 👥 Authors
 
-1. [Requerimientos de la PC/Laptop](#1-requerimientos-de-la-pclaptop)
-2. [Pasos para instalar](#2-pasos-para-instalar)
-   - [2.1 Actualizar librerías](#21-actualizar-librerías)
-   - [2.2 Descargar instalador](#22-descargar-instalador)
-   - [2.3 Ejecutar instalador](#23-ejecutar-instalador)
-   - [2.4 Verificar que Vivado arranque desde la terminal](#24-verificar-que-vivado-arranque-desde-la-terminal)
-   - [2.5 Crear acceso directo](#25-crear-acceso-directo)
-   - [2.6 Instalar drivers JTAG](#26-instalar-drivers-jtag)
-3. [Pruebas de funcionamiento](#3-pruebas-de-funcionamiento)
-   - [3.1 Pruebas con Basys 3](#31-pruebas-con-basys-3)
-   - [3.2 Pruebas con PYNQ Z1](#32-pruebas-con-pynq-z1)
-4. [Anexos](#4-anexos)
-5. [Errores detectados](#5-errores-detectados)
+| Role | Name | Program |
+|------|------|---------|
+| 📘 Author | Luis David Barahona Valdivieso | Electronic Engineering |
+| 🤖 AI Assistant | Claude (Sonnet 4.6) — Anthropic | Large Language Model (LLM) |
 
 ---
 
-## 1. Requerimientos de la PC/Laptop
+## 📋 Table of Contents
 
-Asegúrate de contar con los siguientes requisitos antes de iniciar la instalación:
-
-- Sistema operativo: **Ubuntu 22.04.5 LTS**
-- Espacio en disco: mínimo **100 GB libres** (se recomienda instalar en `/tools/Xilinx`)
-- Conexión a internet estable para la descarga del instalador
-- Permisos de superusuario (`sudo`)
+1. [PC/Laptop Requirements](#1-pclaptop-requirements)
+2. [Installation Steps](#2-installation-steps)
+   - [2.1 Update system libraries](#21-update-system-libraries)
+   - [2.2 Download the installer](#22-download-the-installer)
+   - [2.3 Run the installer](#23-run-the-installer)
+   - [2.4 Verify Vivado launches from terminal](#24-verify-vivado-launches-from-terminal)
+   - [2.5 Create a desktop shortcut](#25-create-a-desktop-shortcut)
+   - [2.6 Install JTAG drivers](#26-install-jtag-drivers)
+3. [Functional Tests](#3-functional-tests)
+   - [3.1 Tests with Basys 3](#31-tests-with-basys-3)
+   - [3.2 Tests with PYNQ Z1](#32-tests-with-pynq-z1)
+4. [Annexes](#4-annexes)
+5. [Detected Errors](#5-detected-errors)
 
 ---
 
-## 2. Pasos para instalar
+## 1. PC/Laptop Requirements
 
-### 2.1 Actualizar librerías
+Make sure the following requirements are met before starting the installation:
 
-Antes de instalar, actualiza el sistema para evitar conflictos de dependencias:
+- Operating system: **Ubuntu 22.04.5 LTS**
+- Free disk space: at least **100 GB** (installation in `/tools/Xilinx` is recommended)
+- Stable internet connection for downloading the installer
+- Superuser privileges (`sudo`)
+
+---
+
+## 2. Installation Steps
+
+### 2.1 Update system libraries
+
+Update the system before installing to avoid dependency conflicts:
 
 ```bash
 sudo apt update
@@ -57,86 +57,86 @@ sudo dist-upgrade -y
 
 ---
 
-### 2.2 Descargar instalador
+### 2.2 Download the installer
 
-Descarga el instalador desde el sitio oficial de AMD/Xilinx:
+Download the installer from the official AMD/Xilinx website:
 
 🔗 [https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2025-2.html](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2025-2.html)
 
-![Evidencia de descarga - página principal](evidencia_descarga_01.png)
+![Download evidence - main page](evidencia_descarga_01.png)
 
-![Evidencia de descarga - selección de versión](evidencia_descarga_02.png)
+![Download evidence - version selection](evidencia_descarga_02.png)
 
-![Evidencia de descarga - confirmación de archivo](evidencia_descarga_03.png)
+![Download evidence - file confirmation](evidencia_descarga_03.png)
 
 ---
 
-### 2.3 Ejecutar instalador
+### 2.3 Run the installer
 
-Navega al directorio donde descargaste el instalador y ejecútalo. Sigue los pasos del asistente gráfico:
+Navigate to the directory where you downloaded the installer and run it. Follow the steps in the graphical wizard:
 
-![Paso 1 - Ejecutar instalador](instalador_paso_01.png)
+![Step 1 - Run the installer](instalador_paso_01.png)
 
-![Paso 2 - Pantalla de bienvenida](instalador_paso_02.png)
+![Step 2 - Welcome screen](instalador_paso_02.png)
 
-![Paso 3 - Aceptar licencia](instalador_paso_03.png)
+![Step 3 - Accept license](instalador_paso_03.png)
 
-![Paso 4 - Selección de producto](instalador_paso_04.png)
+![Step 4 - Product selection](instalador_paso_04.png)
 
-![Paso 5 - Selección de componentes](instalador_paso_05.png)
+![Step 5 - Component selection](instalador_paso_05.png)
 
-![Paso 6 - Opciones adicionales](instalador_paso_06.png)
+![Step 6 - Additional options](instalador_paso_06.png)
 
-![Paso 7 - Resumen de instalación](instalador_paso_07.png)
+![Step 7 - Installation summary](instalador_paso_07.png)
 
-![Paso 8 - Progreso de instalación](instalador_paso_08.png)
+![Step 8 - Installation progress](instalador_paso_08.png)
 
-**Crear la ruta de instalación y asignar permisos** antes de indicar el directorio destino en el instalador:
+**Create the installation directory and assign permissions** before specifying the target path in the installer:
 
 ```bash
 sudo mkdir -p /tools/Xilinx
 sudo chown $USER:$USER /tools/Xilinx
 ```
 
-![Paso 9 - Configurar ruta /tools/Xilinx](instalador_paso_09.png)
+![Step 9 - Set /tools/Xilinx path](instalador_paso_09.png)
 
-![Paso 10 - Instalación en progreso](instalador_paso_10.png)
+![Step 10 - Installation in progress](instalador_paso_10.png)
 
-![Paso 11 - Finalización](instalador_paso_11.png)
+![Step 11 - Completion](instalador_paso_11.png)
 
-![Paso 12 - Confirmación final](instalador_paso_12.png)
+![Step 12 - Final confirmation](instalador_paso_12.png)
 
 ---
 
-### 2.4 Verificar que Vivado arranque desde la terminal
+### 2.4 Verify Vivado launches from terminal
 
-#### Crear variables de entorno
+#### Set environment variables
 
-Agrega el script de configuración de Vivado al archivo `.bashrc`:
+Add the Vivado settings script to your `.bashrc` file:
 
 ```bash
-# Si instalaste en /tools/Xilinx (RECOMENDADO)
+# If installed in /tools/Xilinx (RECOMMENDED)
 echo 'source /tools/Xilinx/2025.2/Vivado/settings64.sh' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-> ⚠️ **Nota:** Si instalaste en `/opt/`, el comando cambia:
+> ⚠️ **Note:** If you installed in `/opt/`, the command changes to:
 > ```bash
 > echo 'source /opt/Xilinx/2025.2/Vivado/settings64.sh' >> ~/.bashrc
 > source ~/.bashrc
 > ```
 
-![Variables de entorno configuradas](variables_entorno.png)
+![Environment variables configured](variables_entorno.png)
 
-#### Probar Vivado
+#### Test Vivado
 
 ```bash
 vivado
 ```
 
-![Vivado abriendo desde la terminal](vivado_terminal.png)
+![Vivado launching from terminal](vivado_terminal.png)
 
-#### Para Vitis (opcional)
+#### For Vitis (optional)
 
 ```bash
 echo 'source /tools/Xilinx/2025.2/Vitis/settings64.sh' >> ~/.bashrc
@@ -145,17 +145,17 @@ source ~/.bashrc
 
 ---
 
-### 2.5 Crear acceso directo
+### 2.5 Create a desktop shortcut
 
-Crea un archivo `.desktop` para acceder a Vivado desde el menú de aplicaciones de Ubuntu.
+Create a `.desktop` file to access Vivado from the Ubuntu application menu.
 
-#### Opción A — Ruta `/tools/Xilinx` (recomendada)
+#### Option A — Path `/tools/Xilinx` (recommended)
 
 ```bash
 nano ~/.local/share/applications/vivado.desktop
 ```
 
-Pega el siguiente contenido:
+Paste the following content:
 
 ```ini
 [Desktop Entry]
@@ -169,14 +169,14 @@ Terminal=false
 Categories=Development;Engineering;
 ```
 
-Guarda con `CTRL+O` → `ENTER` → `CTRL+X`, luego:
+Save with `CTRL+O` → `ENTER` → `CTRL+X`, then run:
 
 ```bash
 chmod +x ~/.local/share/applications/vivado.desktop
 update-desktop-database ~/.local/share/applications
 ```
 
-#### Opción B — Ruta `/opt/Xilinx`
+#### Option B — Path `/opt/Xilinx`
 
 ```bash
 nano ~/.local/share/applications/vivado.desktop
@@ -199,11 +199,11 @@ chmod +x ~/.local/share/applications/vivado.desktop
 update-desktop-database ~/.local/share/applications
 ```
 
-Presiona la tecla **Super/Windows**, busca **Vivado** y haz clic para abrirlo.
+Press the **Super/Windows** key, search for **Vivado**, and click to open it.
 
-![Acceso directo de Vivado en el menú](acceso_directo_vivado.png)
+![Vivado shortcut in the application menu](acceso_directo_vivado.png)
 
-#### Acceso directo para Vitis (opcional)
+#### Desktop shortcut for Vitis (optional)
 
 ```bash
 nano ~/.local/share/applications/vitis.desktop
@@ -226,90 +226,90 @@ chmod +x ~/.local/share/applications/vitis.desktop
 update-desktop-database ~/.local/share/applications
 ```
 
-![Acceso directo de Vitis en el menú](acceso_directo_vitis.png)
+![Vitis shortcut in the application menu](acceso_directo_vitis.png)
 
 ---
 
-### 2.6 Instalar drivers JTAG
+### 2.6 Install JTAG drivers
 
-Los drivers JTAG son necesarios para programar FPGAs mediante cable USB.
+JTAG drivers are required to program FPGAs via USB cable.
 
 ```bash
 cd /tools/Xilinx/2025.2/Vivado/data/xicom/cable_drivers/lin64/install_script/install_drivers
 sudo ./install_drivers
 ```
 
-![Instalación de drivers JTAG](jtag_drivers.png)
+![JTAG drivers installation](jtag_drivers.png)
 
-#### Instalar librerías adicionales
+#### Install additional libraries
 
 ```bash
 cd /tools/Xilinx/2025.2/Vitis/scripts
 sudo ./installLibs.sh
 ```
 
-![Instalación de librerías adicionales - paso 1](libs_adicionales_01.png)
+![Additional libraries installation - step 1](libs_adicionales_01.png)
 
-![Instalación de librerías adicionales - paso 2](libs_adicionales_02.png)
-
----
-
-## 3. Pruebas de funcionamiento
-
-### 3.1 Pruebas con Basys 3
-
-#### Detectar Basys 3
-
-Conecta la tarjeta por USB y verifica que Vivado la reconozca en el Hardware Manager.
-
-![Detección de Basys 3 en Hardware Manager](basys3_detectar.png)
-
-#### Cargar Bitstream
-
-Abre el Hardware Manager, conecta al target y programa el dispositivo con el bitstream.
-
-![Carga de bitstream - paso 1](basys3_bitstream_01.png)
-
-![Carga de bitstream - paso 2](basys3_bitstream_02.png)
+![Additional libraries installation - step 2](libs_adicionales_02.png)
 
 ---
 
-### 3.2 Pruebas con PYNQ Z1
+## 3. Functional Tests
 
-> 📷 *(Sección pendiente de completar — agrega aquí tus imágenes de evidencia con PYNQ Z1)*
+### 3.1 Tests with Basys 3
+
+#### Detect Basys 3
+
+Connect the board via USB and verify that Vivado recognizes it in the Hardware Manager.
+
+![Basys 3 detected in Hardware Manager](basys3_detectar.png)
+
+#### Load Bitstream
+
+Open the Hardware Manager, connect to the target, and program the device with the bitstream.
+
+![Load bitstream - step 1](basys3_bitstream_01.png)
+
+![Load bitstream - step 2](basys3_bitstream_02.png)
 
 ---
 
-## 4. Anexos
+### 3.2 Tests with PYNQ Z1
+
+> 📷 *(Section pending completion — add your PYNQ Z1 evidence images here)*
+
+---
+
+## 4. Annexes
 
 ### PC1
 
-![Anexo PC1 - vista general](anexo_pc1_01.png)
+![Annex PC1 - general view](anexo_pc1_01.png)
 
-![Anexo PC1 - detalle](anexo_pc1_02.png)
+![Annex PC1 - detail](anexo_pc1_02.png)
 
 ### PC2
 
-> 📷 *(Agrega aquí las imágenes correspondientes a PC2)*
+> 📷 *(Add the corresponding images for PC2 here)*
 
 ---
 
-## 5. Errores detectados
+## 5. Detected Errors
 
-### 5.1 PC L414-011 — Vivado instalado en `/opt/Xilinx`
+### 5.1 PC L414-011 — Vivado installed in `/opt/Xilinx`
 
-Se detectó un error en esta PC relacionado con la ruta de instalación alternativa.
+An error was detected on this PC related to the alternative installation path.
 
-![Error en PC L414-011](error_pc_L414_011.png)
-
----
-
-### 5.2 PC L414-012 — Instalación incompleta
-
-No existe el archivo `settings64.sh`, lo que indica que la instalación no se completó correctamente.
-
-> 💡 **Solución sugerida:** Reinstalar Vivado verificando que el proceso de instalación finalice sin interrupciones y que el directorio `/tools/Xilinx/2025.2/Vivado/` contenga el archivo `settings64.sh`.
+![Error on PC L414-011](error_pc_L414_011.png)
 
 ---
 
-*Documentación generada con asistencia de Claude (Anthropic) — Marzo 2026*
+### 5.2 PC L414-012 — Incomplete installation
+
+The file `settings64.sh` does not exist, indicating that the installation did not complete successfully.
+
+> 💡 **Suggested fix:** Reinstall Vivado making sure the installation process finishes without interruptions and that the directory `/tools/Xilinx/2025.2/Vivado/` contains the `settings64.sh` file.
+
+---
+
+*Documentation generated with the assistance of Claude (Anthropic) — March 2026*
