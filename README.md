@@ -264,6 +264,8 @@ Connect the board via USB and verify that Vivado recognizes it in the Hardware M
 #### Load Bitstream
 
 Open the Hardware Manager, connect to the target, and program the device with the bitstream.
+The .bit is in https://github.com/luisbarahona100/Vivado-2025.2-Installation-Guide-on-Ubuntu-22.04/blob/main/test1.bit.
+The .vhd is in https://github.com/luisbarahona100/Vivado-2025.2-Installation-Guide-on-Ubuntu-22.04/blob/main/test1.vhd.
 
 ![0(20)](0(20).png)
 
