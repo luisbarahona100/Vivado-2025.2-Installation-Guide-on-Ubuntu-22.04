@@ -27,7 +27,6 @@
    - [3.1 Tests with Basys 3](#31-tests-with-basys-3)
    - [3.2 Tests with PYNQ Z1](#32-tests-with-pynq-z1)
 4. [Annexes](#4-annexes)
-5. [Detected Errors](#5-detected-errors)
 
 ---
 
@@ -278,23 +277,3 @@ Open the Hardware Manager, connect to the target, and program the device with th
 
 ---
 
-
-## 5. Detected Errors
-
-### 5.1 PC L414-011 — Vivado installed in `/opt/Xilinx`
-
-An error was detected on this PC related to the alternative installation path.
-
-![0(21)](0(21).png)
-
----
-
-### 5.2 PC L414-012 — Incomplete installation
-
-The file `settings64.sh` does not exist, indicating that the installation did not complete successfully.
-
-> 💡 **Suggested fix:** Reinstall Vivado making sure the installation process finishes without interruptions and that the directory `/tools/Xilinx/2025.2/Vivado/` contains the `settings64.sh` file.
-
----
-
-*Documentation generated with the assistance of Claude (Anthropic) — March 2026*
